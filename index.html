@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malcolm Wimbley — Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    
+    
+  </div>
+
+  <!-- STAR FIELD -->
+  <canvas id="stars"></canvas>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow-sub">// software_engineer.init()<span class="blink"></span></p>
+      <h1>
+        <span class="hi">Hi, my name is</span><br>
+        <span class="name">Malcolm Wimbley</span><span class="cursor"></span>
+      </h1>
+      <p class="tagline">
+        I architect systems that scale — from <strong>microservices</strong> to
+        <strong>distributed infrastructure</strong>. Based in Houston, TX,
+        building software that works at the speed of the world.
+      </p>
+      <div class="skills">
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Rust</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">GraphQL</span>
+        <span class="skill-tag">System Design</span>
+      </div>
+    </div>
+
+    <div class="globe-wrapper">
+      <canvas id="globeCanvas" width="460" height="460"></canvas>
+      <p class="globe-hint"><div class="top-coords">📍 <span>29.7604° N, 95.3698° W</span> · Houston, TX</div></p>
+    </div>
+  </section>
+
+  <!-- LIFE TIMER -->
+  <section class="timer-section">
+    <p class="section-label">⏱ Life Expectancy Counter</p>
+    <p class="timer-title">Years Malcolm has been on Earth</p>
+    <p class="timer-sub">Born: January 25, 1997 · Life expectancy: 79 years · Precision: nanosecond</p>
+    <div id="lifeTimer">
+      <span class="int-part">00</span><span class="dot">.</span><span class="dec-part">000000000</span>
+    </div>
+    <div class="timer-bar-wrap">
+      <div class="timer-bar-fill" id="timerBar" style="width:0%"></div>
+    </div>
+    <p class="timer-bar-label" id="timerBarLabel">calculating…</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <h2>Based in <span>Houston, Texas</span></h2>
+    <p>
+      Space City shaped my thinking — when you grow up in the shadow of NASA,
+      you learn that precision matters and every system, no matter how complex,
+      can be engineered to work.
+    </p>
+    <p>
+      I build software with that same ethos: methodical, scalable, and built
+      to handle the unexpected. Whether it's a real-time API or a multi-region
+      cloud architecture, I bring mission-critical discipline to every layer.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Malcolm Wimbley · Software Engineer · 2026</span>
+    <span>📍 <span class="loc">Houston, Texas</span> · 29.7604° N, 95.3698° W</span>
+    <span>Built with precision &amp; purpose 🚀</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
